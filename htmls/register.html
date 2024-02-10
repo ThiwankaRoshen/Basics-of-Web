@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            Register
+        </title>
+    </head>
+
+    <body>
+        <form>                                               <!--Regex:.+@.+ means any characters before and after@ also \ use before we want to use . or + to use as literal for regex -->
+            <input autocomplete="off" autofocus name="email" pattern=".+@.+\.edu" placeholder="Email" type="email"  / ><!--this type of varification is wastefull. client side varification-->
+            <button>Register</button>
+        </form>
+    </body>
+</html>

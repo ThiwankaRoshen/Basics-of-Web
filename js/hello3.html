@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>                  //this below line to wait untill rendering of the page
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('form').addEventListener('submit',function(event){
+                    alert(`hello ${document.querySelector('#name').value}`);
+                    event.preventDefault();
+                })})
+        </script>
+        <title>
+            Hello
+        </title>
+    </head>
+
+    <body>
+
+        <form onsubmit="greet(); return false;">
+            <input id="name" autofocus placeholder="Name" type="text" />
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
